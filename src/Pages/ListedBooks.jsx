@@ -27,9 +27,10 @@ const ListedBooks = () => {
                   
                     <span>Read Books</span>
                 </Link>
+                
                 <Link to={`wishlist`} onClick={() => setTabIndex(1)}
                     className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${tabIndex===1?'border-2 border-b-0':'border-b'}  rounded-t-lg `}>
-                  
+                
                     <span>Wishlist Books</span>
                 </Link>
             </div>

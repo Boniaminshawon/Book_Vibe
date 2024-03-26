@@ -1,10 +1,21 @@
+import { useEffect, useState } from "react";
+import { getWishBooks } from "../utility";
+import ReadBooksCard from "./ReadBooksCard";
 
 
 
 const Wishlist = () => {
+    const [wishListBooks,setWishListBooks]=useState([]);
+    useEffect(()=>{
+        const storedWhishListBooks=getWishBooks();
+        setWishListBooks(storedWhishListBooks);
+
+    },[])
     return (
         <div>
-             <h3 className="text-3xl font-black"> THis is WishList book section</h3>
+             {wishListBooks.map(book=>(
+                <ReadBooksCard key={book.book_Id} book={book}></ReadBooksCard>
+             ))}
         </div>
     );
 };

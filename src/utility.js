@@ -9,6 +9,14 @@ export const getBooks = () => {
     }
     return books;
 }
+export const getWishBooks = () => {
+    let books = [];
+    const storedBooks = localStorage.getItem('wish-books');
+    if (storedBooks) {
+        books = JSON.parse(storedBooks);
+    }
+    return books;
+}
 
 // save item
 export const saveBooks = (book) => {
@@ -17,6 +25,15 @@ export const saveBooks = (book) => {
     if(!isExist){
         books.push(book);
         localStorage.setItem('books',JSON.stringify(books))
+    }
+
+}
+export const saveWishBooks = (book) => {
+    let books = getWishBooks();
+    const isExist = books.find(b => b.book_Id === book.book_Id);
+    if(!isExist){
+        books.push(book);
+        localStorage.setItem('wish-books',JSON.stringify(books))
     }
 
 }

@@ -1,40 +1,38 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import toast, { Toaster } from 'react-hot-toast';
 import { useState } from "react";
-import { saveBooks } from "../utility";
-
+import { saveBooks, saveWishBooks } from "../utility";
 
 const BookDetails = () => {
     const [readBooks, setReadBooks] = useState([]);
-
 
     const books = useLoaderData();
     const { book_Id } = useParams();
     const book = books.find(book => book.book_Id === book_Id);
 
-
     const handleBookRead = (book) => {
-        saveBooks(book);
+        
         const isExist = readBooks.find(b => b.book_Id === book.book_Id);
         if (!isExist) {
             const newReadBooks = [...readBooks, book];
             setReadBooks(newReadBooks);
-            toast.success('Successfully added to the read list!')
+            toast.success('Successfully added to the read list!');
+            saveBooks(book);
         }
-
+        else{
+            toast.error('you already added')
+        }
 
     }
     const handleWishList = (book) => {
-
-        saveBooks(book)
-
-
+      
         const isExist = readBooks.find(b => b.book_Id === book.book_Id);
         if (isExist) {
             toast.error('You already  added to the read list!')
         }
         else {
-            toast.success('Successfully added to the Wish list!')
+            toast.success('Successfully added to the Wish list!');
+            saveWishBooks(book);
         }
 
 
