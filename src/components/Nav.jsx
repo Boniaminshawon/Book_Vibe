@@ -20,7 +20,7 @@ const Nav = () => {
 
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-3xl font-bold">Book Vibe</a>
+                <a className="btn btn-ghost text-3xl text-[#131313] font-bold">Book Vibe</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu space-x-3 text-xl menu-horizontal px-1">

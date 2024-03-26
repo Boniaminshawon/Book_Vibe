@@ -17,8 +17,8 @@ const BooksContainer = ({ book }) => {
                 <p className="border-b-2 border-dashed"></p>
                 <div className="flex justify-between my-5 font-medium font-secondary">
                     <div><p>{book_category}</p></div>
-                    <div className="flex gap-2 font-medium ">
-                        <p>{rating}</p>
+                    <div className="flex  gap-2 font-medium ">
+                        <p className="">{rating}</p>
                         <div className="rating rating-xl">
                             <input type="radio" name="rating-1" className="mask mask-star-2 bg-orange-400" />
 

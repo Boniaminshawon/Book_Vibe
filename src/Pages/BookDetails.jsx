@@ -1,11 +1,44 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import toast, { Toaster } from 'react-hot-toast';
+import { useState } from "react";
+import { saveBooks } from "../utility";
 
 
 const BookDetails = () => {
+    const [readBooks, setReadBooks] = useState([]);
+
+
     const books = useLoaderData();
     const { book_Id } = useParams();
     const book = books.find(book => book.book_Id === book_Id);
 
+
+    const handleBookRead = (book) => {
+        saveBooks(book);
+        const isExist = readBooks.find(b => b.book_Id === book.book_Id);
+        if (!isExist) {
+            const newReadBooks = [...readBooks, book];
+            setReadBooks(newReadBooks);
+            toast.success('Successfully added to the read list!')
+        }
+
+
+    }
+    const handleWishList = (book) => {
+
+        saveBooks(book)
+
+
+        const isExist = readBooks.find(b => b.book_Id === book.book_Id);
+        if (isExist) {
+            toast.error('You already  added to the read list!')
+        }
+        else {
+            toast.success('Successfully added to the Wish list!')
+        }
+
+
+    }
 
     return (
         <div className="flex space-x-10 mt-12 mb-20 font-secondary">
@@ -33,8 +66,10 @@ const BookDetails = () => {
                 </div>
 
                 <div className="space-x-6 mt-7 font-semibold">
-                    <button className="border hover:bg-[#23BE0A] hover:text-white py-2 px-5 rounded-lg">Read</button>
-                    <button className="text-white py-2 px-5 rounded-lg hover:bg-cyan-600 bg-[#50B1C9]">Wishlist</button>
+                    <button onClick={() => handleBookRead(book)} className="border hover:bg-[#23BE0A] hover:text-white py-2 px-5 rounded-lg">Read</button>
+                    <button onClick={() => handleWishList(book)} className="text-white py-2 px-5 rounded-lg hover:bg-cyan-600 bg-[#50B1C9]">Wishlist</button>
+                    <Toaster />
+
                 </div>
 
 
