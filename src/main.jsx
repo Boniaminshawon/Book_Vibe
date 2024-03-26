@@ -10,6 +10,7 @@ import Root from './Layout/Root';
 import Home from './Pages/Home';
 import ListedBooks from './Pages/ListedBooks';
 import PagesRead from './Pages/PagesRead';
+import BookDetails from './Pages/BookDetails';
 
 const router = createBrowserRouter([
   {
@@ -18,8 +19,15 @@ const router = createBrowserRouter([
     children:[
       {
         path:'/',
-        element:<Home></Home>
+        element:<Home></Home>,
+        loader:()=>fetch('../public/books.json')
       },
+      {
+        path:'/:book_Id',
+        element:<BookDetails></BookDetails>,
+        loader:()=>fetch('../public/books.json')
+      },
+      
       {
         path:'/listBook',
         element:<ListedBooks></ListedBooks>
@@ -28,8 +36,10 @@ const router = createBrowserRouter([
         path:'/pagesRead',
         element:<PagesRead></PagesRead>
       }
+      
     ]
   },
+ 
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

@@ -1,136 +1,137 @@
 [
     {
         "book_Id": "001",
-        "book_name": "The Silent Patient",
-        "book_image": "the_silent_patient.jpg",
-        "author": "Alex Michaelides",
-        "book_review": "A gripping psychological thriller with unexpected twists.",
-        "total-pages": 336,
-        "rating": 4.5,
-        "book_category": "Mystery",
-        "publisher_name": "Celadon Books",
-        "publishing_year": 2019,
-        "tags": [
-            "Suspense",
-            "Psychological",
-            "Thriller"
-        ]
-    },
-    {
-        "book_Id": "002",
-        "book_name": "Atomic Habits",
-        "book_image": "atomic_habits.jpg",
-        "author": "James Clear",
-        "book_review": "A motivational guide to building good habits and breaking bad ones.",
-        "total-pages": 320,
-        "rating": 4.7,
-        "book_category": "Self-Help",
-        "publisher_name": "Avery",
-        "publishing_year": 2018,
-        "tags": [
-            "Motivational",
-            "Productivity",
-            "Psychology"
-        ]
-    },
-    {
-        "book_Id": "003",
-        "book_name": "Educated",
-        "book_image": "educated.jpg",
-        "author": "Tara Westover",
-        "book_review": "A powerful memoir about the author's journey from a survivalist family to earning a PhD from Cambridge University.",
-        "total-pages": 352,
-        "rating": 4.6,
-        "book_category": "Biography",
-        "publisher_name": "Random House",
-        "publishing_year": 2018,
-        "tags": [
-            "Memoir",
-            "Inspiring",
-            "Education"
-        ]
-    },
-    {
-        "book_Id": "004",
-        "book_name": "The Night Circus",
-        "book_image": "the_night_circus.jpg",
-        "author": "Erin Morgenstern",
-        "book_review": "A fantastical tale of love and magic set within the mysterious Night Circus.",
-        "total-pages": 400,
-        "rating": 4.4,
-        "book_category": "Fantasy",
-        "publisher_name": "Doubleday",
-        "publishing_year": 2011,
-        "tags": [
-            "Fantasy",
-            "Romance",
-            "Magical Realism"
-        ]
-    },
-    {
-        "book_Id": "005",
         "book_name": "Sapiens: A Brief History of Humankind",
-        "book_image": "sapiens.jpg",
+        "book_image": "https://i.ibb.co/dkFW4VL/237-A0957-removebg-preview.png",
         "author": "Yuval Noah Harari",
-        "book_review": "An insightful exploration of the history of Homo sapiens, from the Stone Age to the present.",
-        "total-pages": 464,
+        "book_review": "Sapiens: A Brief History of Humankind by Yuval Noah Harari offers an insightful exploration of the history of Homo sapiens, from the emergence of our species to the present day. Harari traces the evolution of humans through cognitive, agricultural, and scientific revolutions, examining the key developments that have shaped our species' destiny. With a blend of anthropology, biology, and sociology, Harari challenges conventional wisdom and prompts readers to reconsider their understanding of humanity's place in the world. Sapiens is a thought-provoking journey that sheds light on the past and raises questions about the future of our species..",
+        "total_pages": 464,
         "rating": 4.8,
         "book_category": "History",
         "publisher_name": "Harper",
         "publishing_year": 2014,
         "tags": [
             "History",
-            "Anthropology",
-            "Evolution"
+            "Anthropology"
+       
         ]
     },
     {
+        "book_Id": "002",
+        "book_name": "Atomic Habits",
+        "book_image": "https://i.ibb.co/rmCSBmp/61-Bhf8-Cda-ML-AC-UF1000-1000-QL80-removebg-preview.png",
+        "author": "James Clear",
+        "book_review": "Atomic Habits by James Clear is a motivational guide to building good habits and breaking bad ones. Clear draws on the latest research in psychology, neuroscience, and behavioral economics to provide practical strategies for transforming your habits and achieving lasting change. Through engaging stories, scientific insights, and actionable advice, Clear demonstrates how tiny changes can lead to remarkable results over time. Whether you want to improve your health, productivity, or relationships, Atomic Habits offers a roadmap for mastering the art of habit formation and reaching your full potential.",
+        "total_pages": 320,
+        "rating": 4.7,
+        "book_category": "Self-Help",
+        "publisher_name": "Avery",
+        "publishing_year": 2018,
+        "tags": [
+            "Self-Help",
+            "Productivity"
+         
+        ]
+    },
+    {
+        "book_Id": "003",
+        "book_name": "The Silent Patient",
+        "book_image": "https://i.ibb.co/QX6Dz0Y/81-L0-Fgdz-G6-L-AC-UF350-350-QL80-removebg-preview.png",
+        "author": "Alex Michaelides",
+        "book_review": "The Silent Patient by Alex Michaelides is a gripping psychological thriller that keeps readers on the edge of their seats with unexpected twists and turns. The story revolves around Alicia Berenson, a celebrated painter who suddenly stops speaking after being accused of murdering her husband. As psychotherapist Theo Faber tries to unravel the mystery behind Alicia's silence, he delves deeper into her troubled past and discovers shocking secrets. Michaelides crafts a compelling narrative filled with suspense, deception, and psychological intrigue, making The Silent Patient a must-read for fans of the genre.",
+        "total_pages": 336,
+        "rating": 4.5,
+        "book_category": "Mystery",
+        "publisher_name": "Celadon Books",
+        "publishing_year": 2019,
+        "tags": [
+        
+            "Mystery",
+            "Thriller"
+        ]
+    },
+    {
+        "book_Id": "004",
+        "book_name": "Educated",
+        "book_image": "https://i.ibb.co/mzCDyvt/00e8d0c73b9b4df790211ba56a74ca9e-removebg-preview.png",
+        "author": "Tara Westover",
+        "book_review": "Educated by Tara Westover is a powerful memoir that chronicles the author's journey from growing up in a survivalist family in rural Idaho to earning a PhD from Cambridge University. Despite never attending school as a child, Westover's thirst for knowledge leads her on a remarkable path of self-discovery and academic achievement. Along the way, she grapples with familial loyalty, identity, and the power of education to transform lives. With raw honesty and poignant reflection, Educated offers a compelling testament to the resilience of the human spirit and the pursuit of enlightenment.",
+        "total_pages": 352,
+        "rating": 4.6,
+        "book_category": "Biography",
+        "publisher_name": "Random House",
+        "publishing_year": 2018,
+        "tags": [
+    
+            "Biography",
+            "Education"
+        ]
+    },
+    {
+        "book_Id": "005",
+        "book_name": "The Night Circus",
+        "book_image": "https://i.ibb.co/rkD9B8H/Night-Circus-header-2-removebg-preview-1.png",
+        "author": "Erin Morgenstern",
+        "book_review": "The Night Circus by Erin Morgenstern is a fantastical tale of love and magic set within the mysterious confines of Le Cirque des Rêves, a circus that only opens at night. As two young illusionists, Celia and Marco, engage in a magical competition orchestrated by their enigmatic mentors, they find themselves drawn to each other despite the rules of the game. Morgenstern weaves a mesmerizing narrative filled with enchanting imagery, intricate plots, and star-crossed romance. The Night Circus is a captivating story that transports readers to a world where dreams and reality collide.",
+        "total_pages": 400,
+        "rating": 4.4,
+        "book_category": "Fantasy",
+        "publisher_name": "Doubleday",
+        "publishing_year": 2011,
+        "tags": [
+            "Fantasy",
+            "Romance"
+         
+        ]
+    },
+  
+    {
         "book_Id": "006",
         "book_name": "The Alchemist",
-        "book_image": "the_alchemist.jpg",
+        "book_image": "https://i.ibb.co/Yh8rRYL/output-removebg-preview.png",
         "author": "Paulo Coelho",
-        "book_review": "A timeless tale of self-discovery and following one's dreams.",
-        "total-pages": 208,
+        "book_review": "The Alchemist by Paulo Coelho is a timeless tale of self-discovery and following one's dreams. The story follows Santiago, a young Andalusian shepherd who embarks on a journey to Egypt in search of treasure and his personal legend. Along the way, Santiago encounters wise mentors, magical omens, and unexpected challenges that test his courage and determination. Coelho's lyrical prose and philosophical insights inspire readers to listen to their hearts, pursue their passions, and embrace the unknown. The Alchemist is a soul-stirring fable that resonates with readers of all ages and backgrounds.",
+        "total_pages": 208,
         "rating": 4.2,
         "book_category": "Fiction",
         "publisher_name": "HarperOne",
         "publishing_year": 1988,
         "tags": [
             "Fiction",
-            "Philosophical",
+          
             "Adventure"
         ]
     },
     {
         "book_Id": "007",
         "book_name": "The Subtle Art of Not Giving a F*ck",
-        "book_image": "the_subtle_art.jpg",
+        "book_image": "https://i.ibb.co/4thTd7m/bookcover-thesubtleart-removebg-preview.png",
         "author": "Mark Manson",
-        "book_review": "A no-nonsense approach to living a better life by focusing on what truly matters.",
-        "total-pages": 224,
+        "book_review": "The Subtle Art of Not Giving a Fck by Mark Manson is a no-nonsense approach to living a better life by focusing on what truly matters. Manson argues that happiness does not come from avoiding problems but from confronting them head-on and choosing which struggles to embrace. Through candid anecdotes, humorous observations, and practical advice, Manson challenges conventional self-help wisdom and encourages readers to redefine their values and priorities. The Subtle Art of Not Giving a Fck is a refreshing antidote to the positivity culture, offering a counterintuitive guide to living a more fulfilling life.",
+        "total_pages": 224,
         "rating": 4.1,
         "book_category": "Self-Help",
         "publisher_name": "HarperOne",
         "publishing_year": 2016,
         "tags": [
             "Self-Help",
-            "Motivational",
+          
             "Mindset"
         ]
     },
     {
         "book_Id": "008",
         "book_name": "1984",
-        "book_image": "1984.jpg",
+        "book_image": "https://i.ibb.co/YQt7kpd/book-mockup-removebg-preview.png",
         "author": "George Orwell",
-        "book_review": "A dystopian novel depicting a totalitarian regime and the power of government oppression.",
-        "total-pages": 328,
+        "book_review": "1984 by George Orwell is a dystopian novel that depicts a totalitarian regime where individuality is suppressed, and reality is manipulated by the ruling Party. Set in a future world of perpetual war, surveillance, and propaganda, the story follows Winston Smith, a low-ranking bureaucrat who rebels against the oppressive government. As Winston navigates the dangers of thoughtcrime and forbidden love, he confronts the chilling reality of a society where truth is relative and freedom is an illusion. Orwell's bleak vision of a dystopian future serves as a stark warning against the dangers of authoritarianism and the erosion of civil liberties.",
+        "total_pages": 328,
         "rating": 4.6,
-        "book_category": "Fiction",
+        "book_category": "Classic",
         "publisher_name": "Secker & Warburg",
         "publishing_year": 1949,
         "tags": [
-            "Dystopian",
+           
             "Classic",
             "Political"
         ]
@@ -138,18 +139,18 @@
     {
         "book_Id": "009",
         "book_name": "The Catcher in the Rye",
-        "book_image": "catcher_in_the_rye.jpg",
+        "book_image": "https://i.ibb.co/gdcPbWS/download-removebg-preview.png",
         "author": "J.D. Salinger",
-        "book_review": "A classic coming-of-age novel that captures the disillusionment of youth.",
-        "total-pages": 224,
+        "book_review": "The Catcher in the Rye by J.D. Salinger is a classic coming-of-age novel that captures the disillusionment of youth in post-World War II America. The story is narrated by Holden Caulfield, a troubled teenager who struggles with identity, authenticity, and the phoniness of the adult world. As Holden embarks on a journey through New York City, he grapples with loneliness, alienation, and the loss of innocence. Salinger's iconic portrayal of adolescent angst and rebellion continues to resonate with readers generations after its publication, making The Catcher in the Rye a timeless masterpiece of American literature.",
+        "total_pages": 224,
         "rating": 4.0,
         "book_category": "Fiction",
         "publisher_name": "Little, Brown and Company",
         "publishing_year": 1951,
         "tags": [
             "Coming-of-Age",
-            "Literary",
-            "American Literature"
+            "Literary"
+           
         ]
     }
 ]
