@@ -1,15 +1,11 @@
 
 import { useEffect, useState } from "react";
-// import { useLoaderData } from "react-router-dom";
 import { getBooks } from "../utility";
-// import { useLoaderData } from "react-router-dom";
-
+import ReadBooksCard from "./ReadBooksCard";
 
 const ReadBooks = () => {
     // const books= useLoaderData();
     const [readBooks, setReadBooks] = useState([]);
-
-
     useEffect(() => {
         const storedBooks = getBooks();
         setReadBooks(storedBooks);
@@ -19,12 +15,17 @@ const ReadBooks = () => {
 
     return (
         <div>
-            {/* {
+            {
             readBooks.map(book=>(
-                <p>{book.book_name}</p>
+                <ReadBooksCard key={book.book_Id} book={book}></ReadBooksCard>
             ))
-           } */}
-            <h3 className="text-3xl font-black"> read books: {readBooks}</h3>
+           }
+         
+
+
+
+
+
         </div>
     );
 };
