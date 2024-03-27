@@ -24,18 +24,20 @@ export const saveBooks = (book) => {
     const isExist = books.find(b => b.book_Id === book.book_Id);
     if(!isExist){
         books.push(book);
-        localStorage.setItem('books',JSON.stringify(books))
+        localStorage.setItem('books',JSON.stringify(books));
+       
     }
-
+   
 }
 export const saveWishBooks = (book) => {
     let books = getWishBooks();
     const isExist = books.find(b => b.book_Id === book.book_Id);
     if(!isExist){
         books.push(book);
-        localStorage.setItem('wish-books',JSON.stringify(books))
+        localStorage.setItem('wish-books',JSON.stringify(books));
+       
     }
-
+ 
 }
 
 // // delete Item

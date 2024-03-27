@@ -11,7 +11,7 @@ const ReadBooks = () => {
         setReadBooks(storedBooks);
 
     }, [])
-    console.log(readBooks)
+   
 
     return (
         <div>

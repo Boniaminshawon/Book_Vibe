@@ -5,17 +5,18 @@ import ReadBooksCard from "./ReadBooksCard";
 
 
 const Wishlist = () => {
-    const [wishListBooks,setWishListBooks]=useState([]);
-    useEffect(()=>{
-        const storedWhishListBooks=getWishBooks();
+    const [wishListBooks, setWishListBooks] = useState([]);
+    useEffect(() => {
+        const storedWhishListBooks = getWishBooks();
         setWishListBooks(storedWhishListBooks);
 
-    },[])
+    }, [])
+ 
     return (
         <div>
-             {wishListBooks.map(book=>(
+            {wishListBooks.map(book => (
                 <ReadBooksCard key={book.book_Id} book={book}></ReadBooksCard>
-             ))}
+            ))}
         </div>
     );
 };
