@@ -31,7 +31,7 @@ export const saveBooks = (book) => {
     else if (isExist) {
         toast.error('You already added this book')
     }
-    console.log(books)
+
 
 }
 export const saveWishBooks = (book) => {

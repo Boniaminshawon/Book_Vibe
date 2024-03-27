@@ -16,6 +16,7 @@ import Wishlist from './components/Wishlist';
 import  { Toaster } from 'react-hot-toast';
 import ErrorPage from './components/ErrorPage';
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -40,12 +41,10 @@ const router = createBrowserRouter([
           {
             index:true,
             element:<ReadBooks></ReadBooks>,
-            loader:()=>fetch('../public/books.json')
           },
           {
             path:'wishlist',
             element:<Wishlist></Wishlist>,
-            loader:()=>fetch('../public/books.json')
           }
         ]
       },

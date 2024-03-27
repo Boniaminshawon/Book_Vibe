@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-// import { getWishBooks } from "../utility";
 import ReadBooksCard from "./ReadBooksCard";
 import { getWishBooks } from "../utility";
 
@@ -8,9 +7,7 @@ const Wishlist = () => {
     useEffect(() => {
         const storedWhishListBooks = getWishBooks();
         setWishListBooks(storedWhishListBooks);
-
     }, [])
- 
     return (
         <div>
             {wishListBooks.map(book => (
@@ -19,5 +16,4 @@ const Wishlist = () => {
         </div>
     );
 };
-
 export default Wishlist;

@@ -1,14 +1,11 @@
 import { useLoaderData,  useNavigate,  useParams } from "react-router-dom";
-// import toast from 'react-hot-toast';
-// import { useState } from "react";
 import { saveBooks, saveWishBooks } from "../utility";
 
 const BookDetails = () => {
     const navigate = useNavigate();
     const handleGoBack = () => {
         navigate(-1);
-    }
-    // const [readBooks, setReadBooks] = useState([]);
+    };
 
     const books = useLoaderData();
     const { book_Id } = useParams();
@@ -16,31 +13,10 @@ const BookDetails = () => {
 
     const handleBookRead = (book) => {
         saveBooks(book);
-        // const isExist = readBooks.find(b => b.book_Id === book.book_Id);
-        // if (!isExist) {
-        //     const newReadBooks = [...readBooks, book];
-        //     setReadBooks(newReadBooks);
-        //     toast.success('Successfully added to the read list!');
-        //     saveBooks(book);
-        // }
-        // else if (isExist) {
-        //     toast.error('you already added')
-        // }
-
     }
 
     const handleWishList = (book) => {
         saveWishBooks(book);
-        // const isExist = readBooks.find(b => b.book_Id === book.book_Id);
-        // if (isExist) {
-        //     toast.error('You already  added to the read list!')
-        // }
-        // else {
-        //     // const newReadBooks = [...readBooks, book];
-        //     // setReadBooks(newReadBooks);
-        //     toast.success('Successfully added to the Wish list!');
-        //     saveWishBooks(book);
-        // }
     }
 
     return (
@@ -72,13 +48,8 @@ const BookDetails = () => {
                     <button onClick={() => handleBookRead(book)} className="border hover:bg-[#23BE0A] hover:text-white py-2 px-5 rounded-lg">Read</button>
                     <button onClick={() => handleWishList(book)} className="text-white py-2 px-5 rounded-lg hover:bg-cyan-600 bg-[#50B1C9]">Wishlist</button>
                     <button onClick={handleGoBack} className="border hover:bg-[#23BE0A] hover:text-white py-2 px-5 rounded-lg">Go back</button>
-
                 </div>
-
-
-
             </div>
-
         </div>
     );
 };

@@ -1,20 +1,15 @@
 
-import { useEffect, useState } from "react";
-import { getBooks } from "../utility";
+import { useContext } from "react";
 import ReadBooksCard from "./ReadBooksCard";
+import { sortContext } from "../Pages/ListedBooks";
 
 const ReadBooks = () => {
-    const [readBooks, setReadBooks] = useState([]);
-    useEffect(() => {
-        const storedBooks = getBooks();
-        setReadBooks(storedBooks);
-
-    }, [])
-
+    const sort = useContext(sortContext);
+    
     return (
         <div>
             {
-                readBooks.map(book => (
+                sort.map(book => (
                     <ReadBooksCard key={book.book_Id} book={book}></ReadBooksCard>
                 ))
             }
