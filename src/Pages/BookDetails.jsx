@@ -1,6 +1,6 @@
 import { useLoaderData,  useNavigate,  useParams } from "react-router-dom";
-import toast from 'react-hot-toast';
-import { useState } from "react";
+// import toast from 'react-hot-toast';
+// import { useState } from "react";
 import { saveBooks, saveWishBooks } from "../utility";
 
 const BookDetails = () => {
@@ -8,37 +8,39 @@ const BookDetails = () => {
     const handleGoBack = () => {
         navigate(-1);
     }
-    const [readBooks, setReadBooks] = useState([]);
+    // const [readBooks, setReadBooks] = useState([]);
 
     const books = useLoaderData();
     const { book_Id } = useParams();
     const book = books.find(book => book.book_Id === book_Id);
 
     const handleBookRead = (book) => {
-        const isExist = readBooks.find(b => b.book_Id === book.book_Id);
-        if (!isExist) {
-            const newReadBooks = [...readBooks, book];
-            setReadBooks(newReadBooks);
-            toast.success('Successfully added to the read list!');
-            saveBooks(book);
-        }
-        else if (isExist) {
-            toast.error('you already added')
-        }
+        saveBooks(book);
+        // const isExist = readBooks.find(b => b.book_Id === book.book_Id);
+        // if (!isExist) {
+        //     const newReadBooks = [...readBooks, book];
+        //     setReadBooks(newReadBooks);
+        //     toast.success('Successfully added to the read list!');
+        //     saveBooks(book);
+        // }
+        // else if (isExist) {
+        //     toast.error('you already added')
+        // }
 
     }
 
     const handleWishList = (book) => {
-        const isExist = readBooks.find(b => b.book_Id === book.book_Id);
-        if (isExist) {
-            toast.error('You already  added to the read list!')
-        }
-        else {
-            // const newReadBooks = [...readBooks, book];
-            // setReadBooks(newReadBooks);
-            toast.success('Successfully added to the Wish list!');
-            saveWishBooks(book);
-        }
+        saveWishBooks(book);
+        // const isExist = readBooks.find(b => b.book_Id === book.book_Id);
+        // if (isExist) {
+        //     toast.error('You already  added to the read list!')
+        // }
+        // else {
+        //     // const newReadBooks = [...readBooks, book];
+        //     // setReadBooks(newReadBooks);
+        //     toast.success('Successfully added to the Wish list!');
+        //     saveWishBooks(book);
+        // }
     }
 
     return (

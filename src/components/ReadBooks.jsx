@@ -4,27 +4,20 @@ import { getBooks } from "../utility";
 import ReadBooksCard from "./ReadBooksCard";
 
 const ReadBooks = () => {
-    // const books= useLoaderData();
     const [readBooks, setReadBooks] = useState([]);
     useEffect(() => {
         const storedBooks = getBooks();
         setReadBooks(storedBooks);
 
     }, [])
-   
 
     return (
         <div>
             {
-            readBooks.map(book=>(
-                <ReadBooksCard key={book.book_Id} book={book}></ReadBooksCard>
-            ))
-           }
-         
-
-
-
-
+                readBooks.map(book => (
+                    <ReadBooksCard key={book.book_Id} book={book}></ReadBooksCard>
+                ))
+            }
 
         </div>
     );
