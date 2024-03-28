@@ -17,6 +17,7 @@ import  { Toaster } from 'react-hot-toast';
 import ErrorPage from './components/ErrorPage';
 import Blogs from './Pages/Blogs';
 import BlogDetails from './Pages/BlogDetails';
+import About from './Pages/About';
 
 
 const router = createBrowserRouter([
@@ -65,6 +66,10 @@ const router = createBrowserRouter([
         element:<BlogDetails></BlogDetails>,
         loader:()=>fetch('../public/blog.json')
         
+      },
+      {
+        path:'/about',
+        element:<About></About>
       }
     
       

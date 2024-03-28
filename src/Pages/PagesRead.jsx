@@ -24,12 +24,12 @@ const PagesRead = () => {
     };
 
     return (
-        <div style={{ width: '100%', height: 550 }}>
+        <div style={{ width: '100%', height: 540 }}>
             <ResponsiveContainer>
 
                 <BarChart
                     width={1200}
-                    height={550}
+                    height={540}
                     data={readBooks}
                     margin={{
                         top: 20,

@@ -7,7 +7,7 @@ const BooksContainer = ({ book }) => {
     return (
         <Link to={`/${book_Id}`} className="">
             <div className="border  border-[#13131326] p-6 rounded-2xl shadow-md ">
-                <img src={book_image} alt="" className="object-cover bg-[#F3F3F3] object-center w-full rounded-md h-[300px] dark:bg-gray-500" />
+                <img src={book_image} alt="" className="object-cover bg-[#F3F3F3] object-center w-full rounded-md  dark:bg-gray-500" />
                 <div className="">
                     <p className="text-start mt-5 mb-4 font-medium font-secondary text-[#23BE0A] "><span className="px-3 py-2 rounded-xl bg-[#23BE0A0D]">{tags[0]}</span>    <span className="px-3 py-2 rounded-xl bg-[#23BE0A0D] ml-3">{tags[1]}</span></p>
 

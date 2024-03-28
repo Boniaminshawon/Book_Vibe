@@ -10,11 +10,6 @@ const ListedBooks = () => {
     const [readBooks, setReadBooks] = useState([]);
     const [displayReadBooks, setDisplayBooks] = useState([]);
 
-
-    // console.log('read books:;;;',readBooks);
-    // console.log('display read books:;;;',displayReadBooks);
-    
-
     useEffect(() => {
         const storedBooks = getBooks();
         setReadBooks(storedBooks);
@@ -53,14 +48,14 @@ const ListedBooks = () => {
 
 
     return (
-        <div className="font-secondary  my-10">
-            <h2 className='text-3xl bg-[#1313130D] text-[#131313] py-8 rounded-2xl font-bold text-center'>Listed Books</h2>
+        <div className="font-secondary my-6 sm:my-10">
+            <h2 className='md:text-3xl text-2xl bg-[#1313130D] text-[#131313] py-3 sm:py-8 rounded-2xl font-bold text-center font-primary'>Listed Books</h2>
 
             <sortContext.Provider value={displayReadBooks}>
-                <div className="flex mt-6 justify-center">
+                <div className="flex mt-4 md:mt-6 justify-center">
                     <details className="dropdown dropdown-right ">
-                        <summary className="m-1 text-[20px] btn bg-[#23BE0A] text-white">Sort By <span className="text-3xl">  <RiArrowDropDownLine /></span></summary>
-                        <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                        <summary className="m-1 sm:text-[20px] btn bg-[#23BE0A] text-white">Sort By <span className="text-3xl">  <RiArrowDropDownLine /></span></summary>
+                        <ul className="p-2  shadow menu dropdown-content z-[1] text-xl font-medium rounded-box bg-[#1313130D] w-32 md:w-52">
                             <Link onClick={() => handleSortingRating(displayReadBooks)}> <li><button>Rating</button></li></Link>
                             <Link onClick={() => handleSortingPages(displayReadBooks)}><li><a>Number of pages</a></li></Link>
                             <Link onClick={() => handleSortingYear(displayReadBooks)}><li ><a>Published Year</a></li></Link>
@@ -69,7 +64,7 @@ const ListedBooks = () => {
                 </div>
 
 
-                <div className="flex text-[#131313CC] text-lg font-medium items-start -mx-4 overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap ">
+                <div className="flex text-[#131313CC] mt-5 text-lg font-semibold items-start -mx-4 overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap ">
                     <Link to={''} onClick={() => setTabIndex(0)}
                         className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${tabIndex === 0 ? ' border-2 border-b-0' : 'border-b'}  rounded-t-lg `}>
 
