@@ -39,7 +39,7 @@ const PagesRead = () => {
                     }}
                 >
                     <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="book_name" />
+                    <XAxis  dataKey="book_name" />
                     <YAxis />
                     {/* <Legend></Legend> */}
                     <Tooltip></Tooltip>

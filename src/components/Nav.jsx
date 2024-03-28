@@ -6,10 +6,11 @@ const Nav = () => {
         <NavLink to='/' className={({ isActive }) => isActive ? 'text-[#23BE0A] rounded-lg font-bold border-[#23BE0A] border' : 'text-[#131313CC] font-semibold' }> <button className="p-2 border border-white hover:border-[#131313CC] rounded-lg hover:bg-gray-200">Home</button> </NavLink>
         <NavLink to='/listBook' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold rounded-lg border-[#23BE0A] border' : 'text-[#131313CC] font-semibold'}> <button className="p-2 border border-white hover:border-[#131313CC] rounded-lg hover:bg-gray-200">Listed Books</button> </NavLink>
         <NavLink to='/pagesRead' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold rounded-lg border-[#23BE0A] border' : 'text-[#131313CC] font-semibold'}><button className="p-2 hover:border border border-white hover:border-[#131313CC] rounded-lg hover:bg-gray-200">Page to Read</button></NavLink>
+        <NavLink to='/blogs' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold rounded-lg border-[#23BE0A] border' : 'text-[#131313CC] font-semibold'}><button className="p-2 hover:border border border-white hover:border-[#131313CC] rounded-lg hover:bg-gray-200">Blog</button></NavLink>
 
     </>
     return (
-        <div className="navbar bg-base-100 font-secondary ">
+        <div className="navbar bg-base-100 font-secondary mb-5">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

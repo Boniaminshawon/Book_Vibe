@@ -10,6 +10,7 @@ const BookDetails = () => {
     const books = useLoaderData();
     const { book_Id } = useParams();
     const book = books.find(book => book.book_Id === book_Id);
+    // console.log(book)
 
     const handleBookRead = (book) => {
         saveBooks(book);

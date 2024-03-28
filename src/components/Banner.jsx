@@ -5,13 +5,13 @@ import BooksContainer from "./BooksContainer";
 const Banner = ({ books }) => {
     return (
         <div>
-            <div className="bg-[#1313130D] mt-5 py-16 px-24 rounded-3xl flex justify-center items-center">
+            <div className="bg-[#1313130D] mt-10 py-12 px-24 rounded-3xl flex justify-center items-center">
                 <div className="ml-5 ">
                     <h1 className="text-[56px] mb-10 font-bold text-[#131313] ">Books to freshen up your bookshelf</h1>
                    <Link to={'/listBook'}> <button className="text-white bg-[#23BE0A] text-xl font-semibold font-secondary px-4 py-3 rounded-2xl">View The List</button></Link>
                 </div>
                 <div>
-                    <img className="w-[600px]" src={books[0].book_image} alt="" />
+                    <img className="" src="https://i.ibb.co/3T89FSk/pile-of-books-classic-literature-BBXA0-F-removebg-preview.png" alt="" />
                 </div>
             </div>
             <div className="text-center my-16">
@@ -28,3 +28,4 @@ const Banner = ({ books }) => {
 };
 
 export default Banner;
+

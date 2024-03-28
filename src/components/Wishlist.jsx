@@ -1,9 +1,12 @@
-import { useEffect, useState } from "react";
+import {useEffect, useState } from "react";
 import ReadBooksCard from "./ReadBooksCard";
 import { getWishBooks } from "../utility";
 
+
 const Wishlist = () => {
     const [wishListBooks, setWishListBooks] = useState([]);
+    console.log('wishlist book', wishListBooks);
+  
     useEffect(() => {
         const storedWhishListBooks = getWishBooks();
         setWishListBooks(storedWhishListBooks);

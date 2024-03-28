@@ -5,11 +5,16 @@ import { getBooks } from "../utility";
 
 export const sortContext = createContext([]);
 
-
 const ListedBooks = () => {
     const [tabIndex, setTabIndex] = useState(0);
     const [readBooks, setReadBooks] = useState([]);
     const [displayReadBooks, setDisplayBooks] = useState([]);
+
+
+    // console.log('read books:;;;',readBooks);
+    // console.log('display read books:;;;',displayReadBooks);
+    
+
     useEffect(() => {
         const storedBooks = getBooks();
         setReadBooks(storedBooks);
@@ -17,32 +22,33 @@ const ListedBooks = () => {
 
     }, []);
     let handleSortingYear = (displayReadBooks) => {
-        displayReadBooks.sort(function (a, b) {
+        const year= [...displayReadBooks].sort(function (a, b) {
             const yearA = (a.publishing_year);
             const yearB = (b.publishing_year);
             const result = yearB - yearA;
             return result;
         });
-        setDisplayBooks(displayReadBooks);
+        setDisplayBooks(year);
+        console.log(year)
         //    window.location.reload();
     }
     let handleSortingRating = (displayReadBooks) => {
-        displayReadBooks.sort(function (a, b) {
+       const rating= [...displayReadBooks].sort(function (a, b) {
             const ratingA = (a.rating);
             const ratingB = (b.rating);
             const result = ratingB - ratingA;
             return result;
         });
-        setDisplayBooks(displayReadBooks);
+        setDisplayBooks(rating);
     }
     let handleSortingPages = (displayReadBooks) => {
-        displayReadBooks.sort(function (a, b) {
+        const pages =[...displayReadBooks].sort(function (a, b) {
             const pagesA = (a.total_pages);
             const pagesB = (b.total_pages);
             const result = pagesB - pagesA;
             return result;
         });
-        setDisplayBooks(displayReadBooks);
+        setDisplayBooks(pages);
     }
 
 
